@@ -31,6 +31,7 @@ REQUIRED QUESTION SEQUENCE:
 11. Compliance Question: Ask about any specific compliance or specific feature requirements
 12. Finally, ask for name and email
 13. provide the final estimated cost of the project
+14.(if user asks any extra infomrmations regarding the project provide the infor according to the data colllected and don't start from the begining)
 
 CALCULATION FACTORS:
 Industry Multipliers:
