@@ -67,6 +67,8 @@ export default function Home() {
   return (
     <>
       <Header />
+      <div className='h-[64px] bg-[#0F172A]' />
+
       <div className="min-h-screen bg-[#0F172A] text-white">
         {/* Hero Section */}
         <div className="relative overflow-hidden">
