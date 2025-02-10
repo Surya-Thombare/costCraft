@@ -1,7 +1,7 @@
 'use client'
 
 import Header from '@/components/Header';
-import { Standard } from "@typebot.io/nextjs";
+import { Standard } from "@typebot.io/react";
 
 import React from 'react';
 
@@ -15,6 +15,15 @@ const Cost2 = () => {
           typebot="customer-support-6eb7yy4"
           style={{ width: "100%", height: "600px" }}
         />
+
+        {/* <iframe
+          src="https://typebot.co/customer-support-6eb7yy4"
+          style={{
+            border: 'none',
+            width: '100%',
+            height: '100%'
+          }}
+        ></iframe> */}
       </div>
     </div>
   );
