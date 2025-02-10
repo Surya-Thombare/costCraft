@@ -1,9 +1,16 @@
 'use client'
 
-import Header from '@/components/Header';
-import { Standard } from "@typebot.io/react";
-
 import React from 'react';
+import Header from '@/components/Header';
+import dynamic from 'next/dynamic';
+
+const Standard = dynamic(
+  () => import("@typebot.io/react").then((mod) => mod.Standard),
+  {
+    ssr: false,
+    loading: () => <div className="w-full h-full flex items-center justify-center text-white">Loading...</div>
+  }
+);
 
 const Cost2 = () => {
   return (
@@ -13,17 +20,8 @@ const Cost2 = () => {
       <div className='flex justify-center' style={{ height: 'calc(100vh - 64px)' }}>
         <Standard
           typebot="customer-support-6eb7yy4"
-          style={{ width: "100%", height: "600px" }}
+          style={{ width: "100%", height: "100%" }}
         />
-
-        {/* <iframe
-          src="https://typebot.co/customer-support-6eb7yy4"
-          style={{
-            border: 'none',
-            width: '100%',
-            height: '100%'
-          }}
-        ></iframe> */}
       </div>
     </div>
   );
